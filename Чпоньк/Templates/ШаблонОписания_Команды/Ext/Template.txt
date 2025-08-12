@@ -1,0 +1,7 @@
+﻿<Command uuid="{Идентификатор_0}">
+	<Properties>
+		<ObjectBelonging>Adopted</ObjectBelonging>
+		<Name>{Имя}</Name>
+		<ExtendedConfigurationObject>{ИдентификаторРасширяемогоОбъекта}</ExtendedConfigurationObject>
+	</Properties>
+</Command>
