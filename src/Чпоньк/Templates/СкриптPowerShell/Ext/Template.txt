@@ -1,0 +1,338 @@
+﻿param (
+    [Parameter(Mandatory=$true)]
+    [string]$Command
+)
+
+function Get-Config {
+    
+    try {
+        $jsonPath = Join-Path $PSScriptRoot "Config.json"
+        
+        if (-not (Test-Path $jsonPath)) {
+            throw "Файл $jsonPath не найден"
+        }
+        
+        $Config = Get-Content -Path $jsonPath -Raw -Encoding UTF8 | ConvertFrom-Json
+        
+    } catch {
+        Write-Error "Ошибка при чтении JSON: $($_.Exception.Message)"
+    }
+
+    return $Config
+
+}
+
+function Delete-Directory {
+    param(
+        [string]$Path
+    )
+    Remove-Item $Path -Recurse -Force
+}
+
+function Get-Executor {
+    param(
+        $Config
+    )
+
+    if($Config.IBCMDIsInstalled) {
+        $Result = $Config.IBCMDExecutionFile
+    }else{
+        $Result = $Config.ExecutableFile1c
+    }
+
+    return $Result
+
+}
+
+function Get-CommandParams {
+    param(
+        [string]$CommandName,
+        $Config
+    )
+    
+    $Result = ""
+
+    if($Config.IBCMDIsInstalled) {
+        
+        switch($CommandName){
+            "Создать временную базу" { $Result = "infobase create --db-path=""$($Config.InfobaseForBuildExtension)""" }
+            "Собрать расширение" { $Result = "infobase config import ""$($Config.ExtensionSourceFiles)"" --db-path=""$($Config.InfobaseForBuildExtension)"" -e Чпоньк" }
+            "Выгрузить расширение" { $Result = "infobase config save ""$($Config.ExtensionFile)"" --db-path=""$($Config.InfobaseForBuildExtension)"" -e Чпоньк" }
+        }
+
+    }else{
+        
+        switch($CommandName){
+            "Создать временную базу" { $Result = "createinfobase File=""$($Config.InfobaseForBuildExtension)""" }
+            "Собрать расширение" { $Result = "designer /IBConnectionString file=""$($Config.InfobaseForBuildExtension)"" /LoadConfigFromFiles ""$($Config.ExtensionSourceFiles)"" -Extension Чпоньк -updateConfigDumpInfo -NoCheck" }
+            "Выгрузить расширение" { $Result = "designer /IBConnectionString file=""$($Config.InfobaseForBuildExtension)"" /DumpCfg ""$($Config.ExtensionFile)"" -Extension Чпоньк" }
+        }
+    }
+
+    return $Result
+
+}
+
+function Build-Extension {
+    param(
+        $Config
+    )
+    
+    $Executor = Get-Executor $Config
+
+    $CommandName = "Создать временную базу"
+    $Params = Get-CommandParams $CommandName $Config
+    $Result = Start-Command $CommandName $Executor $Params
+    if($Result -eq $false) { Exit 1 }
+
+    $CommandName = "Собрать расширение"
+    $Params = Get-CommandParams $CommandName $Config
+    $Result = Start-Command $CommandName $Executor $Params
+    if($Result -eq $false) { Exit 1 }
+    
+    $CommandName = "Выгрузить расширение"
+    $Params = Get-CommandParams $CommandName $Config
+    $Result = Start-Command $CommandName $Executor $Params
+    if($Result -eq $false) { Exit 1 }
+    
+}
+
+function Start-Command {
+    param(
+        [string]$CommandName,
+        [string]$Executor,
+        $ArgumentList
+    )
+
+    try {
+        Write-Host "Начало выполнения команды <$($CommandName)>"
+        
+        $process = Start-Process -FilePath "$($Executor)" `
+            -ArgumentList $ArgumentList `
+            -WindowStyle Hidden `
+            -Wait
+        
+        $ExitCode = $process.ExitCode
+        if ($ExitCode -eq 0 -or $ExitCode -eq  $null) {
+            Write-Host "Команда <$($CommandName)> успешно выполнена"
+            $Result = $true
+        } else {
+            Write-Error "Ошибка выполнения команды <$($CommandName)>. Код выхода: $($ExitCode)"
+            $Result = $false
+        }
+        
+    } catch {
+        Write-Error "Ошибка выполнения команды <$($CommandName)>: $($_.Exception.Message)"
+        $Result = $false
+    }
+
+    return $Result
+}
+
+function Start-Monitoring {
+    param(
+        $Config
+    )
+
+    $Path = $PSScriptRoot
+
+    if($Config.UseCOM) {
+
+        $ComConnector = New-Object -ComObject V83.ComConnector
+        $ComConnection = $ComConnector.Connect("$($Config.ConnectionString); usr='$($Config.User)'; pwd='$($Config.Password)';")
+        $Module1C = [System.__ComObject].InvokeMember("Чпоньк_COMАдаптер",[System.Reflection.BindingFlags]::GetProperty,$null,$ComConnection,$null)
+        $Config | Add-Member -MemberType NoteProperty -Name "Module1C" -Value $Module1C
+
+    }
+
+    # Хэш-таблица для хранения состояний файлов
+    $fileStates = @{}
+    # Инициализация
+    Initialize-FileStates $Config
+    Write-Host "Начало мониторинга директории: $Path"
+    Write-Host "Всего файлов: $($fileStates.Count)"
+    Write-Host "Интервал проверки: $($Config.Interval) секунд"
+    Write-Host "Включены подкаталоги: $($Config.IncludeSubdirectories)"
+    Write-Host "Фильтр файлов: '$($Config.Filter)'"
+    Write-Host "Нажмите Ctrl+C для остановки мониторинга"
+
+    # Основной цикл мониторинга
+    try {
+        while ($true) {
+            Start-Sleep -Seconds $Config.Interval
+            Check-ForChanges $Config
+        }
+    }
+    catch [System.Management.Automation.CmdletInvocationException] {
+        if ($_.FullyQualifiedErrorId -eq "CtrlC") {
+            Write-Host "Мониторинг остановлен пользователем" -ForegroundColor Yellow
+        }
+    }
+    catch {
+        Write-Host "Ошибка мониторинга: $_" -ForegroundColor Red
+    }
+    finally {
+        Write-Host "Итоговое количество отслеживаемых файлов: $($fileStates.Count)"
+        $Content = $null
+        $Result = $null
+
+        if($Config.UseCOM){
+            $Module1C = $null
+            $ComConnection = $null
+            [System.Runtime.Interopservices.Marshal]::ReleaseComObject($ComConnector) | Out-Null
+        }
+        # Принудительная сборка мусора
+        [System.GC]::Collect()
+        [System.GC]::WaitForPendingFinalizers()
+        [System.GC]::Collect()
+    }
+}
+
+function Get-FileInfo {
+    param (
+        [string]$FilePath
+    )
+    
+    $file = Get-Item -Path $FilePath
+    $hash = Get-FileHash -Path $FilePath -Algorithm MD5 -ErrorAction SilentlyContinue
+    
+    return @{
+        FullName = $file.FullName
+        LastWriteTime = $file.LastWriteTime
+        Size = $file.Length
+        Attributes = $file.Attributes
+        Hash = if ($hash) { $hash.Hash } else { $null }
+    }
+}
+
+function Initialize-FileStates {
+    param(
+        $Config
+    )
+    
+    $params = @{
+        Path = $PSScriptRoot;
+        Filter = $Config.Filter
+        File = $true
+    }
+    
+    if ($Config.IncludeSubdirectories) {
+        $params.Recurse = $true
+    }
+    
+    Get-ChildItem @params | ForEach-Object {
+        $fileStates[$_.FullName] = Get-FileInfo -FilePath $_.FullName
+    }
+}
+
+function SendTo1C {
+    param(
+        $Event,
+        $FilePath,
+        [string]$Content=""
+    )
+
+    if($Config.UseCOM) {
+        $Args = @([String]$FilePath, [String]$Content)
+        $Result = [System.__ComObject].InvokeMember($Event,[System.Reflection.BindingFlags]::InvokeMethod,$null,$Module1C, $Args)
+    }else{
+        
+        [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+        $Uri = "$($Config.HTTPService)?event=$($Event)"
+        $Authorization = "Basic " + [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes("$($Config.User):$($Config.Password)"))
+
+        $Headers = @{
+            "Authorization" = $Authorization
+            "User-Agent" = "chponk"
+            "Content-Type" = "application/json"
+        }
+        $Json = @{
+            file = $FilePath
+            content = $Content
+        } | ConvertTo-Json
+        $Body = [System.Text.Encoding]::UTF8.GetBytes($Json)
+
+        $TempFile = New-TemporaryFile
+        $Response = Invoke-RestMethod -Uri $Uri -Headers $Headers -Method Post -Body $Body -OutFile $TempFile
+        $Result = Get-Content $TempFile -Encoding UTF8
+
+    }
+    return $Result
+}
+
+function Check-ForChanges {
+    param(
+        $Config
+    )
+
+    $params = @{
+        Path = $PSScriptRoot
+        Filter = $Config.Filter
+        File = $true
+    }
+    
+    if ($Config.IncludeSubdirectories) {
+        $params.Recurse = $true
+    }
+    
+    $currentFiles = Get-ChildItem @params
+    
+    foreach ($file in $currentFiles) {
+        $FilePath = $file.FullName
+        $currentState = Get-FileInfo -FilePath $FilePath
+        
+        if ($fileStates.ContainsKey($FilePath)) {
+            $lastState = $fileStates[$FilePath]
+            $changes = @()
+            
+            if ($currentState.LastWriteTime -ne $lastState.LastWriteTime) {
+                $changes += "время изменения"
+            }
+            
+            if ($currentState.Size -ne $lastState.Size) {
+                $changes += "размер ($($lastState.Size) → $($currentState.Size))"
+            }
+            
+            if ($currentState.Attributes -ne $lastState.Attributes) {
+                $changes += "атрибуты"
+            }
+            
+            if ($currentState.Hash -ne $lastState.Hash -and $currentState.Hash -ne $null -and $lastState.Hash -ne $null) {
+                $changes += "содержимое"
+            }
+            
+            if ($changes.Count -gt 0) {
+                $Content = Get-Content -Path $FilePath -Raw -Encoding UTF8
+                $Result = SendTo1C "ФайлИзменен" $FilePath $Content
+                Write-Host $Result -ForegroundColor Gray
+            }
+        } else {
+            Write-Host "[$(Get-Date -Format 'HH:mm:ss')] Новый файл: $FilePath" -ForegroundColor Blue
+        }
+        
+        $fileStates[$FilePath] = $currentState
+    }
+    
+    $removedFiles = @()
+    foreach ($FilePath in $fileStates.Keys) {
+        if (-not (Test-Path -Path $FilePath -PathType Leaf)) {
+            $removedFiles += $FilePath
+        }
+    }
+    
+    foreach ($FilePath in $removedFiles) {
+        SendTo1C "ФайлУдален" $FilePath
+        Write-Host "[$(Get-Date -Format 'HH:mm:ss')] Файл удален: $FilePath" -ForegroundColor Red
+        $fileStates.Remove($FilePath)
+    }
+}
+
+$Config = Get-Config
+
+switch($Command){
+    "build" { Build-Extension $Config}
+    "start" { Start-Monitoring $Config }
+}
+
+
+

@@ -10,69 +10,6 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<Table name="Настройки" id="9">
-			<Representation>List</Representation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.Настройки</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="НастройкиКонтекстноеМеню" id="10"/>
-			<AutoCommandBar name="НастройкиКоманднаяПанель" id="11">
-				<ChildItems>
-					<Button name="ЗаполнитьПоУмолчанию" id="7">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаполнитьПоУмолчанию</CommandName>
-						<ExtendedTooltip name="ЗаполнитьПоУмолчаниюРасширеннаяПодсказка" id="8"/>
-					</Button>
-				</ChildItems>
-			</AutoCommandBar>
-			<ExtendedTooltip name="НастройкиРасширеннаяПодсказка" id="12"/>
-			<SearchStringAddition name="НастройкиСтрокаПоиска" id="13">
-				<AdditionSource>
-					<Item>Настройки</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="НастройкиСтрокаПоискаКонтекстноеМеню" id="14"/>
-				<ExtendedTooltip name="НастройкиСтрокаПоискаРасширеннаяПодсказка" id="15"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="НастройкиСостояниеПросмотра" id="16">
-				<AdditionSource>
-					<Item>Настройки</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="НастройкиСостояниеПросмотраКонтекстноеМеню" id="17"/>
-				<ExtendedTooltip name="НастройкиСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="НастройкиУправлениеПоиском" id="19">
-				<AdditionSource>
-					<Item>Настройки</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="НастройкиУправлениеПоискомКонтекстноеМеню" id="20"/>
-				<ExtendedTooltip name="НастройкиУправлениеПоискомРасширеннаяПодсказка" id="21"/>
-			</SearchControlAddition>
-			<ChildItems>
-				<InputField name="НастройкиКлюч" id="36">
-					<DataPath>Объект.Настройки.Ключ</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НастройкиКлючКонтекстноеМеню" id="37"/>
-					<ExtendedTooltip name="НастройкиКлючРасширеннаяПодсказка" id="38"/>
-				</InputField>
-				<InputField name="НастройкиЗначение" id="39">
-					<DataPath>Объект.Настройки.Значение</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НастройкиЗначениеКонтекстноеМеню" id="40"/>
-					<ExtendedTooltip name="НастройкиЗначениеРасширеннаяПодсказка" id="41"/>
-				</InputField>
-				<InputField name="НастройкиТип" id="42">
-					<DataPath>Объект.Настройки.Тип</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="НастройкиТипКонтекстноеМеню" id="43"/>
-					<ExtendedTooltip name="НастройкиТипРасширеннаяПодсказка" id="44"/>
-				</InputField>
-			</ChildItems>
-		</Table>
 		<UsualGroup name="ГруппаНастройки" id="31">
 			<Title>
 				<v8:item>
@@ -86,20 +23,37 @@
 					<v8:content>Группа настройки</v8:content>
 				</v8:item>
 			</ToolTip>
+			<VerticalStretch>true</VerticalStretch>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="32"/>
 		</UsualGroup>
 		<UsualGroup name="Группа3" id="3">
-			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<HorizontalStretch>true</HorizontalStretch>
+			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="4"/>
 			<ChildItems>
+				<Button name="Сбросить" id="49">
+					<Type>UsualButton</Type>
+					<Width>15</Width>
+					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+					<CommandName>Form.Command.ПоУмолчанию</CommandName>
+					<ExtendedTooltip name="СброситьРасширеннаяПодсказка" id="50"/>
+				</Button>
+				<Button name="Сохранить" id="47">
+					<Type>UsualButton</Type>
+					<Width>12</Width>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.Сохранить</CommandName>
+					<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="48"/>
+				</Button>
 				<Button name="ПрименитьИЗакрыть" id="5">
 					<Type>UsualButton</Type>
 					<Representation>PictureAndText</Representation>
 					<DefaultButton>true</DefaultButton>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<CommandName>Form.Command.ПрименитьИЗакрыть</CommandName>
 					<Picture>
 						<xr:Ref>StdPicture.Write</xr:Ref>
@@ -111,6 +65,7 @@
 					<Type>UsualButton</Type>
 					<Width>9</Width>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
 					<CommandName>Form.StandardCommand.Close</CommandName>
 					<ExtendedTooltip name="ЗакрытьРасширеннаяПодсказка" id="46"/>
 				</Button>
@@ -141,20 +96,45 @@
 			</ToolTip>
 			<Action>ПрименитьИЗакрыть</Action>
 		</Command>
-		<Command name="ЗаполнитьПоУмолчанию" id="2">
+		<Command name="Сохранить" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить по умолчанию</v8:content>
+					<v8:content>Сохранить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить по умолчанию</v8:content>
+					<v8:content>Сохранить</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ЗаполнитьПоУмолчанию</Action>
+			<Picture>
+				<xr:Ref>StdPicture.SaveReportSettings</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Сохранить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПоУмолчанию" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По умолчанию</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По умолчанию</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Reread</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПоУмолчанию</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

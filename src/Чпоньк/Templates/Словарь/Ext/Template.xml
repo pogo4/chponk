@@ -8,14 +8,9 @@
 			<code>Русский</code>
 			<description>Русский</description>
 		</languageInfo>
-		<languageInfo>
-			<id>ru1</id>
-			<code>Язык1</code>
-			<description>Язык1</description>
-		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>3</size>
+		<size>4</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -34,39 +29,56 @@
 				<formatIndex>3</formatIndex>
 			</column>
 		</columnsItem>
+		<columnsItem>
+			<index>3</index>
+			<column>
+				<formatIndex>4</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
 			<c>
 				<c>
-					<f>0</f>
+					<f>5</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Класс</v8:content>
+							<v8:content>ЕдинственноеАнглийский</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>4</f>
+					<f>5</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Модуль</v8:content>
+							<v8:content>МножественноеАнглийский</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>4</f>
+					<f>5</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИмяФайла</v8:content>
+							<v8:content>ЕдинственноеРусский</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МножественноеРусский</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -82,14 +94,9 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОбщиеМодули</v8:content>
+							<v8:content>Document</v8:content>
 						</v8:item>
 					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
 				</c>
 			</c>
 			<c>
@@ -98,7 +105,29 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
+							<v8:content>Documents</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документы</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -114,14 +143,9 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Формы</v8:content>
+							<v8:content>Catalog</v8:content>
 						</v8:item>
 					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
 				</c>
 			</c>
 			<c>
@@ -130,7 +154,29 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Form\Module.bsl</v8:content>
+							<v8:content>Catalogs</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочник</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Справочники</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -142,33 +188,44 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыОбмена</v8:content>
+							<v8:content>Language</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
+							<v8:content>Languages</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>6</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>Язык</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Языки</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -180,33 +237,44 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыОбмена</v8:content>
+							<v8:content>Role</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
+							<v8:content>Roles</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>8</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>Роль</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Роли</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -218,33 +286,44 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>КритерииОтбора</v8:content>
+							<v8:content>CommonModule</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
+							<v8:content>CommonModules</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ОбщийМодуль</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ОбщиеМодули</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -256,270 +335,17 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Боты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>7</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ХранилищеНастроек</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>8</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>WebСервисы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>9</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>HTTPСервисы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>10</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>WebSocketКлиенты</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>11</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>СервисыИнтеграции</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>2</i>
-				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\Module.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>12</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Константы</v8:content>
+							<v8:content>ObjectModule</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджераЗначения</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ValueManagerModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>13</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Константы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>14</index>
-		<row>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Справочники</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
+				<i>2</i>
 				<c>
 					<f>0</f>
 					<tl>
@@ -533,10 +359,348 @@
 			<c>
 				<c>
 					<f>0</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>7</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>ManagerModule</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>2</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МодульМенеджера</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>8</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Module</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Modules</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модуль</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Модули</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Class</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Classes</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Класс</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Классы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>10</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Command</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Commands</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команда</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Команды</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>11</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CommandModule</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МодульКоманды</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>12</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Form</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Forms</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формы</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>13</index>
+		<row>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Name</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Names</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имена</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>14</index>
+		<row>
+			<c>
+				<c>
+					<f>6</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>OnOpen</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>2</i>
+				<c>
+					<f>1</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПриОткрытии</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -548,33 +712,23 @@
 		<row>
 			<c>
 				<c>
-					<f>10</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Справочники</v8:content>
+							<v8:content>Before</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>1</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>Перед</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -590,29 +744,19 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Документы</v8:content>
+							<v8:content>Override</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>Вместо</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -624,33 +768,23 @@
 		<row>
 			<c>
 				<c>
-					<f>11</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Документы</v8:content>
+							<v8:content>After</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>8</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>После</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -662,33 +796,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЖурналыДокументов</v8:content>
+							<v8:content>Opening</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>Открытие</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -700,33 +824,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Перечисления</v8:content>
+							<v8:content>AppVersion</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ВерсияПриложения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -738,33 +852,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отчеты</v8:content>
+							<v8:content>DirectorySeparator</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>РазделительДиректорий</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -776,33 +880,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отчеты</v8:content>
+							<v8:content>WorkDirectory</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>РабочийКаталог</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -814,33 +908,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Обработки</v8:content>
+							<v8:content>Interval</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>Интервал</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -852,33 +936,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Обработки</v8:content>
+							<v8:content>IncludeSubdirectories</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ВключаяПодкаталоги</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -890,33 +964,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыВидовХарактеристик</v8:content>
+							<v8:content>Filter</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>Фильтр</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -928,33 +992,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыВидовХарактеристик</v8:content>
+							<v8:content>ConnectionString</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>СтрокаСоединения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -966,33 +1020,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыСчетов</v8:content>
+							<v8:content>User</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>Пользователь</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1004,33 +1048,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыСчетов</v8:content>
+							<v8:content>Password</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>Пароль</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1042,33 +1076,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыВидовРасчета</v8:content>
+							<v8:content>UseCom</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
+							<v8:content>ИспользоватьCom</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1080,33 +1104,44 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ПланыВидовРасчета</v8:content>
+							<v8:content>HTTPService</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
+							<v8:content>HTTPServices</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>9</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>HTTPСервис</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>HTTPСервисы</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1118,33 +1153,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыСведений</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>5</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульНаборЗаписей</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\RecordSetModule.bsl</v8:content>
+							<v8:content>ConfigDumpInfo</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>2</i>
+				<c>
+					<f>7</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ФайлВерсий</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1156,33 +1181,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыСведений</v8:content>
+							<v8:content>ExtensionFile</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ФайлРасширения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1194,33 +1209,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыНакопления</v8:content>
+							<v8:content>ExtensionSourceFiles</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульНаборЗаписей</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\RecordSetModule.bsl</v8:content>
+							<v8:content>ИсходныеФайлыРасширения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1232,33 +1237,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыНакопления</v8:content>
+							<v8:content>ExecutableFile1c</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ИсполняемыйФайл1с</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1270,33 +1265,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыБухгалтерии</v8:content>
+							<v8:content>InfobaseForBuildExtension</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульНаборЗаписей</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\RecordSetModule.bsl</v8:content>
+							<v8:content>ИнформационнаяБазаДляСборкиРасширения</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1308,33 +1293,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыБухгалтерии</v8:content>
+							<v8:content>IBCMDIsInstalled</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>7</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>УтилитаIbcmdУстановлена</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1346,223 +1321,23 @@
 		<row>
 			<c>
 				<c>
-					<f>1</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыРасчета</v8:content>
+							<v8:content>IBCMDExecutionFile</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
+				<i>2</i>
 				<c>
-					<f>5</f>
+					<f>0</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>МодульНаборЗаписей</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\RecordSetModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>37</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>РегистрыРасчета</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>38</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>БизнесПроцессы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>5</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>39</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>БизнесПроцессы</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>40</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Задачи</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>5</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульОбъекта</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>6</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ObjectModule.bsl</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>41</index>
-		<row>
-			<c>
-				<c>
-					<f>1</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Задачи</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>7</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>МодульМенеджера</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>9</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>\Ext\ManagerModule.bsl</v8:content>
+							<v8:content>ИсполняемыйФайлIbcmd</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1570,40 +1345,31 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>4</defaultFormatIndex>
-	<height>42</height>
-	<vgRows>42</vgRows>
+	<defaultFormatIndex>8</defaultFormatIndex>
+	<height>37</height>
+	<vgRows>37</vgRows>
 	<format>
-		<width>159</width>
+		<width>161</width>
 	</format>
 	<format>
-		<width>170</width>
+		<width>173</width>
 	</format>
 	<format>
-		<width>169</width>
+		<width>194</width>
+	</format>
+	<format>
+		<width>152</width>
+	</format>
+	<format>
+		<backColor>style:ButtonBackColor</backColor>
+	</format>
+	<format>
+		<width>141</width>
+	</format>
+	<format>
+		<width>184</width>
 	</format>
 	<format>
 		<width>72</width>
-	</format>
-	<format>
-		<width>118</width>
-	</format>
-	<format>
-		<width>140</width>
-	</format>
-	<format>
-		<width>104</width>
-	</format>
-	<format>
-		<width>181</width>
-	</format>
-	<format>
-		<width>240</width>
-	</format>
-	<format>
-		<width>93</width>
-	</format>
-	<format>
-		<width>78</width>
 	</format>
 </document>

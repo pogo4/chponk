@@ -33,17 +33,17 @@
 		</InternalInfo>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<Name>{Имя}</Name>
+			<Name>Чпоньк</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>{Синоним}</v8:content>
+					<v8:content>Чпоньк!</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
 			<ConfigurationExtensionPurpose>Patch</ConfigurationExtensionPurpose>
 			<KeepMappingToExtendedConfigurationObjectsByIDs>true</KeepMappingToExtendedConfigurationObjectsByIDs>
-			<NamePrefix>{Префикс}</NamePrefix>
+			<NamePrefix>Чпоньк_</NamePrefix>
 			<ConfigurationExtensionCompatibilityMode>{РежимСовместимости}</ConfigurationExtensionCompatibilityMode>
 			<UsePurposes>
 				<v8:Value xsi:type="app:ApplicationUsePurpose">PlatformApplication</v8:Value>
@@ -54,9 +54,6 @@
 		</Properties>
 		<ChildObjects>
 			<Language>{Язык}</Language>
-			<CommonModule>{Имя}</CommonModule>
-			<CommonModule>{Имя}Клиент</CommonModule>
-			<CommonModule>{Имя}КлиентГлобальный</CommonModule>
 			{ПодчиненныеОбъекты}
 		</ChildObjects>
 	</Configuration>

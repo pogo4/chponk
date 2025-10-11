@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<ExternalDataProcessor uuid="65ce369a-209d-482a-940a-e0db66583a32">
+	<ExternalDataProcessor uuid="e7d89232-2008-4132-8cae-6b7c8158b2db">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>1e14d7f1-2ffe-45f2-9af3-341556949ff9</xr:ObjectId>
+				<xr:ObjectId>288994ad-e30b-494f-b40d-069e1578e297</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.Чпоньк" category="Object">
-				<xr:TypeId>c930c91d-6420-4af3-96f5-2770bc55717e</xr:TypeId>
-				<xr:ValueId>01f54c4d-3d46-4f5d-a89f-2818340c765c</xr:ValueId>
+				<xr:TypeId>340be31e-510c-48ed-908b-8ddf8dbc72f2</xr:TypeId>
+				<xr:ValueId>fa5e187c-c6eb-4985-9fe1-0e60ccd250a7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -24,44 +24,6 @@
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="08b6ef3f-e304-488c-82cf-7248ab54fd5e">
-				<Properties>
-					<Name>ИмяПрограммы</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя программы</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>20</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-				</Properties>
-			</Attribute>
 			<TabularSection uuid="27ee48a8-9ebc-47dc-8668-23614ce942d5">
 				<InternalInfo>
 					<xr:GeneratedType name="DataProcessorTabularSection.Чпоньк.Настройки" category="TabularSection">
@@ -166,11 +128,22 @@
 							</Synonym>
 							<Comment/>
 							<Type>
+								<v8:Type>xs:boolean</v8:Type>
 								<v8:Type>xs:string</v8:Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>10</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Any</v8:AllowedSign>
+								</v8:NumberQualifiers>
 								<v8:StringQualifiers>
 									<v8:Length>255</v8:Length>
 									<v8:AllowedLength>Variable</v8:AllowedLength>
 								</v8:StringQualifiers>
+								<v8:DateQualifiers>
+									<v8:DateFractions>DateTime</v8:DateFractions>
+								</v8:DateQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -667,238 +640,23 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="de31cea0-8168-46aa-84c7-bcf94af29270">
-				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Чпоньк.ПредопределенныеМетоды" category="TabularSection">
-						<xr:TypeId>1a167bfd-04cc-406b-a653-ab3d0f711929</xr:TypeId>
-						<xr:ValueId>99ba9b1d-b767-49b7-a6d8-83a8204dd2c2</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Чпоньк.ПредопределенныеМетоды" category="TabularSectionRow">
-						<xr:TypeId>ae24fc9b-2f73-49fb-bf40-d26f9c127d03</xr:TypeId>
-						<xr:ValueId>67c2d974-bc3d-401b-add6-b3499df04888</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>ПредопределенныеМетоды</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Предопределенные методы</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:PasswordMode>false</xr:PasswordMode>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:Synonym/>
-							<xr:Comment/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ChoiceParameterLinks/>
-							<xr:FillValue xsi:nil="true"/>
-							<xr:Mask/>
-							<xr:ChoiceParameters/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-				</Properties>
-				<ChildObjects>
-					<Attribute uuid="a3484444-a85e-4648-8468-0714824a2b57">
-						<Properties>
-							<Name>КлючМодуля</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Ключ модуля</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>200</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="c82816ca-3712-4837-a218-3841c38a3728">
-						<Properties>
-							<Name>Метод</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Метод</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>150</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="02885d9c-e8ce-4185-bfd9-2e802e1ce802">
-						<Properties>
-							<Name>Параметры</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Параметры</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>150</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="a790a88d-24f9-49b6-9f15-ef0b60d5a939">
-						<Properties>
-							<Name>ТипМетода</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Тип метода</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
-				</ChildObjects>
-			</TabularSection>
 			<TabularSection uuid="f0dfe1fd-edf3-4d53-92c9-34c59707b018">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Чпоньк.ИменаСущностей" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.Чпоньк.Словарь" category="TabularSection">
 						<xr:TypeId>8ca281a6-b7d7-4fb2-9732-335dc9a581ee</xr:TypeId>
 						<xr:ValueId>257fd41c-fcda-4654-b1c1-09a7ae4222cb</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Чпоньк.ИменаСущностей" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.Чпоньк.Словарь" category="TabularSectionRow">
 						<xr:TypeId>fa3bc155-a03f-423e-b868-6bd02f76c105</xr:TypeId>
 						<xr:ValueId>41c59e49-6e71-4aa3-9123-966e73ca55bd</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ИменаСущностей</Name>
+					<Name>Словарь</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Имена сущностей</v8:content>
+							<v8:content>Словарь</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -1382,59 +1140,15 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="989cbf4a-e2dd-4cf6-9092-a59c4ef6aa8e">
-						<Properties>
-							<Name>ПараметрыШаблона</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Параметры шаблона</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>0</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
 				</ChildObjects>
 			</TabularSection>
 			<Form>Форма</Form>
 			<Form>Настройки</Form>
-			<Form>ДобавлениеМетода</Form>
-			<Form>ВыборЗначенияИзСписка</Form>
-			<Template>ИменаСущностей</Template>
+			<Template>Словарь</Template>
 			<Template>МодулиКлассов</Template>
 			<Template>ОписанияКлассов</Template>
-			<Template>ПредопределенныеМетоды</Template>
 			<Template>Чпоньк</Template>
-			<Template>ЧпонькКлиент</Template>
-			<Template>ЧпонькКлиентГлобальный</Template>
+			<Template>ШаблонОписания_HTTPСервисы</Template>
 			<Template>ШаблонОписания_Документы</Template>
 			<Template>ШаблонОписания_Команды</Template>
 			<Template>ШаблонОписания_Конфигурация</Template>
@@ -1445,7 +1159,11 @@
 			<Template>ШаблонОписания_Языки</Template>
 			<Template>ШаблонФайлаВерсий</Template>
 			<Template>ШаблонФайлаФормы</Template>
-			<Template>МодульУправляемогоПриложения</Template>
+			<Template>ШаблонМетодаКонтроллера</Template>
+			<Template>ШаблонМетодаКонтроллераИзвне</Template>
+			<Template>ШаблонМетода</Template>
+			<Template>СкриптPowerShell</Template>
+			<Template>HTTPСервис</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>

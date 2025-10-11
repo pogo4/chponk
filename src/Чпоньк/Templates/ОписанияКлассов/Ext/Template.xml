@@ -8,6 +8,11 @@
 			<code>Русский</code>
 			<description>Русский</description>
 		</languageInfo>
+		<languageInfo>
+			<id>ru1</id>
+			<code>Язык1</code>
+			<description>Язык1</description>
+		</languageInfo>
 	</languageSettings>
 	<columns>
 		<size>7</size>
@@ -670,6 +675,12 @@
 			<c>
 				<c>
 					<f>4</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ШаблонОписания_HTTPСервисы</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -1458,7 +1469,23 @@
 			<c>
 				<c>
 					<f>0</f>
-					<tl/>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ChartsOfCalculationTypes</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -1495,6 +1522,28 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>InformationRegisters</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1537,6 +1586,28 @@
 					</tl>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>AccumulationRegisters</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -1571,6 +1642,28 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>2</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>AccountingRegisters</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -1613,6 +1706,28 @@
 					</tl>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>CalculationRegisters</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -1651,6 +1766,28 @@
 					</tl>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>BusinessProcesses</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -1685,6 +1822,28 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Tasks</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>{Объект}.xml</v8:content>
 						</v8:item>
 					</tl>
 				</c>
