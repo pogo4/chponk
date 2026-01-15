@@ -139,8 +139,12 @@ function Start-Monitoring {
     if($Config.UseCOM) {
 
         $ComConnector = New-Object -ComObject V83.ComConnector
-        $ComConnection = $ComConnector.Connect("$($Config.ConnectionString); usr='$($Config.User)'; pwd='$($Config.Password)';")
-        $Module1C = [System.__ComObject].InvokeMember("Чпоньк_COMАдаптер",[System.Reflection.BindingFlags]::GetProperty,$null,$ComConnection,$null)
+        $ConnectionString = "$($Config.ConnectionString) usr=""$($Config.User)"";"
+        If([bool]$Config.Password){
+            $ConnectionString = "$($ConnectionString) pwd=""$($Config.Password)"";"
+        }
+        $ComConnection = $ComConnector.Connect($ConnectionString)
+        $Module1C = [System.__ComObject].InvokeMember("Чпоньк",[System.Reflection.BindingFlags]::GetProperty,$null,$ComConnection,$null)
         $Config | Add-Member -MemberType NoteProperty -Name "Module1C" -Value $Module1C
 
     }

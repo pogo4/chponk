@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<ExternalDataProcessor uuid="e7d89232-2008-4132-8cae-6b7c8158b2db">
+	<ExternalDataProcessor uuid="c7c6cbc8-7341-4f21-96d0-7a685be94228">
 		<InternalInfo>
 			<xr:ContainedObject>
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
-				<xr:ObjectId>288994ad-e30b-494f-b40d-069e1578e297</xr:ObjectId>
+				<xr:ObjectId>ef877199-5954-4ba9-8659-5a82c5032536</xr:ObjectId>
 			</xr:ContainedObject>
 			<xr:GeneratedType name="ExternalDataProcessorObject.Чпоньк" category="Object">
-				<xr:TypeId>340be31e-510c-48ed-908b-8ddf8dbc72f2</xr:TypeId>
-				<xr:ValueId>fa5e187c-c6eb-4985-9fe1-0e60ccd250a7</xr:ValueId>
+				<xr:TypeId>262c5a53-a286-4776-9e28-b6e077c3fe0c</xr:TypeId>
+				<xr:ValueId>972fee05-d967-4e7c-a37a-192313f200d4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -1148,22 +1148,46 @@
 			<Template>МодулиКлассов</Template>
 			<Template>ОписанияКлассов</Template>
 			<Template>Чпоньк</Template>
-			<Template>ШаблонОписания_HTTPСервисы</Template>
-			<Template>ШаблонОписания_Документы</Template>
-			<Template>ШаблонОписания_Команды</Template>
-			<Template>ШаблонОписания_Конфигурация</Template>
-			<Template>ШаблонОписания_ОбщиеМодули</Template>
-			<Template>ШаблонОписания_Роли</Template>
-			<Template>ШаблонОписания_Справочники</Template>
-			<Template>ШаблонОписания_Формы</Template>
-			<Template>ШаблонОписания_Языки</Template>
+			<Template>HTTPСервис</Template>
 			<Template>ШаблонФайлаВерсий</Template>
 			<Template>ШаблонФайлаФормы</Template>
 			<Template>ШаблонМетодаКонтроллера</Template>
 			<Template>ШаблонМетодаКонтроллераИзвне</Template>
 			<Template>ШаблонМетода</Template>
 			<Template>СкриптPowerShell</Template>
-			<Template>HTTPСервис</Template>
+			<Template>ШаблонОписания_Конфигурация</Template>
+			<Template>ШаблонОписания_ОбщиеМодули</Template>
+			<Template>ШаблонОписания_ОбщиеМодули_Расширяемый</Template>
+			<Template>ШаблонОписания_Роли</Template>
+			<Template>ШаблонОписания_ПланыОбмена</Template>
+			<Template>ШаблонОписания_КритерииОтбора</Template>
+			<Template>ШаблонОписания_Боты</Template>
+			<Template>ШаблонОписания_ХранилищаНастроек</Template>
+			<Template>ШаблонОписания_ОбщиеКоманды</Template>
+			<Template>ШаблонОписания_ОбщиеФормы</Template>
+			<Template>ШаблонОписания_WebСервисы</Template>
+			<Template>ШаблонОписания_HTTPСервисы</Template>
+			<Template>ШаблонОписания_WebSocketКлиенты</Template>
+			<Template>ШаблонОписания_СервисыИнтеграции</Template>
+			<Template>ШаблонОписания_Языки</Template>
+			<Template>ШаблонОписания_Константы</Template>
+			<Template>ШаблонОписания_Справочники</Template>
+			<Template>ШаблонОписания_Документы</Template>
+			<Template>ШаблонОписания_ЖурналыДокументов</Template>
+			<Template>ШаблонОписания_Перечисления</Template>
+			<Template>ШаблонОписания_Отчеты</Template>
+			<Template>ШаблонОписания_Обработки</Template>
+			<Template>ШаблонОписания_ПланыВидовХарактеристик</Template>
+			<Template>ШаблонОписания_ПланыСчетов</Template>
+			<Template>ШаблонОписания_ПланыВидовРасчета</Template>
+			<Template>ШаблонОписания_РегистрыСведений</Template>
+			<Template>ШаблонОписания_РегистрыНакопления</Template>
+			<Template>ШаблонОписания_РегистрыБухгалтерии</Template>
+			<Template>ШаблонОписания_РегистрыРасчета</Template>
+			<Template>ШаблонОписания_БизнесПроцессы</Template>
+			<Template>ШаблонОписания_Задачи</Template>
+			<Template>ШаблонОписания_Формы</Template>
+			<Template>ШаблонОписания_Команды</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
