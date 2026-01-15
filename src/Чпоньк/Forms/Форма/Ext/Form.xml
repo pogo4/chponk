@@ -376,6 +376,18 @@
 											<CommandName>Form.Command.Запустить</CommandName>
 											<ExtendedTooltip name="ЗапуститьРасширеннаяПодсказка" id="608"/>
 										</Button>
+										<Button name="ДополнительныеНастройки" id="713">
+											<Type>UsualButton</Type>
+											<Representation>Text</Representation>
+											<CommandName>Form.Command.ОткрытьНастройки</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дополнительные настройки</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ДополнительныеНастройкиРасширеннаяПодсказка" id="714"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -427,7 +439,6 @@
 								</Button>
 								<Button name="Перезапустить" id="689">
 									<Type>UsualButton</Type>
-									<Visible>false</Visible>
 									<CommandName>Form.Command.Перезапустить</CommandName>
 									<ExtendedTooltip name="ПерезапуститьРасширеннаяПодсказка" id="690"/>
 								</Button>

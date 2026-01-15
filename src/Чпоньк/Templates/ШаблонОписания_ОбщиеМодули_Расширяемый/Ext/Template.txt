@@ -3,15 +3,15 @@
 	<CommonModule uuid="{Идентификатор_0}">
 		<Properties>
 			<Name>{Имя}</Name>
-			<Synonym/>
 			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>{ИдентификаторРасширяемогоОбъекта}</ExtendedConfigurationObject>
 			<Global>{Глобальный}</Global>
 			<ClientManagedApplication>{КлиентУправляемоеПриложение}</ClientManagedApplication>
 			<Server>{Сервер}</Server>
 			<ExternalConnection>{ВнешнееСоединение}</ExternalConnection>
 			<ClientOrdinaryApplication>{КлиентОбычноеПриложение}</ClientOrdinaryApplication>
 			<ServerCall>{ВызовСервера}</ServerCall>
-			<Privileged>{Привилегированный}</Privileged>
 		</Properties>
 	</CommonModule>
 </MetaDataObject>
